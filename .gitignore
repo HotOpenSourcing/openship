@@ -22,8 +22,6 @@ apps/cli/README.md
 *.bun-build
 
 # Environment
-.env
-.env.local
 .env.*.local
 .env.saas
 .env.local-saas
@@ -32,7 +30,6 @@ apps/cli/README.md
 .dev-secrets.json
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -56,3 +53,4 @@ pnpm-debug.log*
 .react-router
 .wrangler
 next-env.d.ts
+config.bat

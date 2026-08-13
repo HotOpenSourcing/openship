@@ -12,8 +12,8 @@
     "./globals.css": "./src/globals.css"
   },
   "scripts": {
-    "build": "tsup src/index.tsx --format esm --dts --clean --external react --external react-dom",
-    "dev": "tsup src/index.tsx --format esm --dts --watch --external react --external react-dom",
+    "build": "node init && tsup src/index.tsx --format esm --dts --clean --external react --external react-dom",
+    "dev": "node init && tsup src/index.tsx --format esm --dts --watch --external react --external react-dom",
     "lint": "tsc --noEmit",
     "clean": "rm -rf dist .turbo node_modules"
   },

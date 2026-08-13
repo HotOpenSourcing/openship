@@ -28,10 +28,10 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsup && bun run build/stage-server.ts",
-    "build:payload": "tsup && bun run build/stage-server.ts && bun run build/stage-cli-payload.ts",
+    "build": "node init && tsup && bun run build/stage-server.ts",
+    "build:payload": "node init && tsup && bun run build/stage-server.ts && bun run build/stage-cli-payload.ts",
     "cli": "bun dist/index.js",
-    "dev": "bun run build && bun run build/stage-dashboard.ts && OPENSHIP_DASHBOARD_DIR=\"$(cd ../dashboard/.next/standalone && pwd)\" bun dist/index.js",
+    "dev": "node init && bun run build && bun run build/stage-dashboard.ts && OPENSHIP_DASHBOARD_DIR=\"$(cd ../dashboard/.next/standalone && pwd)\" bun dist/index.js",
     "lint": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",

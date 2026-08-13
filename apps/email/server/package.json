@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun --watch run src/main.ts",
-    "start": "bun run src/main.ts",
-    "build": "tsc --noEmit",
+    "dev": "node init && bun --watch run src/main.ts",
+    "start": "node init && bun run src/main.ts",
+    "build": "node init && tsc --noEmit",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
